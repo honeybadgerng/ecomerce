@@ -54,11 +54,14 @@ const Checkout = () => {
       price: totalAmount,
     };
 
-    const response = await fetch("http://localhost:1337/api/order", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(requestBody),
-    });
+    const response = await fetch(
+      "https://emile12server.onrender.com/api/order",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(requestBody),
+      }
+    );
     const session = await response.json();
     await stripe.redirectToCheckout({
       sessionId: session.id,
