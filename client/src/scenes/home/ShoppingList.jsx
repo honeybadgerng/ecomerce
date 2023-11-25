@@ -20,7 +20,7 @@ const ShoppingList = () => {
 
   async function getItems() {
     const items = await fetch(
-      "https://res.cloudinary.com/dhoh5iiq8/image/upload/?populate=image",
+      "https://res.cloudinary.com/dhoh5iiq8/image/upload?populate=image",
       { method: "GET" }
     );
     const itemsJson = await items.json();
