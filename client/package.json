@@ -1,5 +1,4 @@
 {
-  "proxy": "https://ecomerce-vert-kappa.vercel.app/"
   "name": "react-ecommerce",
   "version": "0.1.0",
   "private": true,
