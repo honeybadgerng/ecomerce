@@ -18,7 +18,7 @@ const Item = ({ item, width }) => {
 
   const { category, price, name, image } = item.attributes;
   // Check if 'image' is defined and has the required properties
-  const url = image?.data?.attributes?.formats?.medium?.url || "";
+  const url = image?.data?.attributes?.formats?.thumbnail?.url || "";
 
   return (
     <Box width={width}>
