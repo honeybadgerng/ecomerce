@@ -109,65 +109,65 @@ function Navbar() {
           boxShadow="0px 4px 4px rgba(0, 0, 0, 0.1)"
           zIndex="3"
         >
-          <MenuItem onClick={() => handleMenuItemClick("Supermarket")}>
-            <RouterLink to="/about" color="inherit">
+          <MenuItem onClick={() => navigate("/Supermarket")}>
+            <RouterLink to="/Supermarket" color="inherit">
               Supermarket
             </RouterLink>
           </MenuItem>
-          <MenuItem onClick={() => handleMenuItemClick("Health & Beauty ")}>
-            <RouterLink to="/categories" color="inherit">
+          <MenuItem onClick={() => handleMenuItemClick("Health & Beauty")}>
+            <RouterLink to="/healthAndBeauty" color="inherit">
               Health & Beauty
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Appliances")}>
-            <RouterLink to="/manual-order" color="inherit">
+            <RouterLink to="/appliances" color="inherit">
               Appliances
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Phones & Tablets")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/phonesAndTablets" color="inherit">
               Phones & Tablets
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Computing")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/computing" color="inherit">
               Computing
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Electronics")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/electronics" color="inherit">
               Electronics
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Fashion")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/fashion" color="inherit">
               Fashion
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Baby Products")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/babyProducts" color="inherit">
               Baby Products
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Gaming")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/gaming" color="inherit">
               Gaming
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Sporting Goods")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/sportingGoods" color="inherit">
               Sporting Goods
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => handleMenuItemClick("Pet supplies")}>
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/petSupplies" color="inherit">
               Pet supplies
             </RouterLink>
           </MenuItem>
           <MenuItem
             onClick={() => handleMenuItemClick("Books, Movies & Music")}
           >
-            <RouterLink to="/contact" color="inherit">
+            <RouterLink to="/booksMoviesAndMusic" color="inherit">
               Books, Movies & Music
             </RouterLink>
           </MenuItem>
