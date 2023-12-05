@@ -63,13 +63,22 @@ const CartMenu = () => {
             {cart.map((item) => (
               <Box key={`${item.attributes.name}-${item.id}`}>
                 <FlexBox p="15px 0">
-                  <Box flex="1 1 40%">
-                    <img
-                      alt={item?.name}
-                      width="123px"
-                      height="164px"
-                      src={`https://emile12server.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
-                    />
+                  <Box flex="1 1 40%" mb="40px">
+                    {item?.attributes?.image?.data?.attributes?.formats
+                      ?.thumbnail?.url ? (
+                      <img
+                        alt={item?.attributes?.name}
+                        width="100%"
+                        height="100%"
+                        src={
+                          item?.attributes?.image?.data?.attributes?.formats
+                            ?.thumbnail?.url
+                        }
+                        style={{ objectFit: "contain" }}
+                      />
+                    ) : (
+                      <div>No Image Available</div>
+                    )}
                   </Box>
                   <Box flex="1 1 60%">
                     <FlexBox mb="5px">
