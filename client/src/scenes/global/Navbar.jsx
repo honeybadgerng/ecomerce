@@ -60,12 +60,6 @@ function Navbar() {
           columnGap="20px"
           zIndex="2"
         >
-          <RouterLink to="/about" color="inherit">
-            <MenuItem onClick={() => navigate("About")}>About</MenuItem>
-          </RouterLink>
-          <RouterLink to="/blogs" color="inherit">
-            <MenuItem onClick={() => navigate("Blogs")}>Blogs</MenuItem>
-          </RouterLink>
           <IconButton sx={{ color: "black" }}>
             <SearchOutlined />
           </IconButton>
