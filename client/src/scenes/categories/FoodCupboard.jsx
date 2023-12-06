@@ -12,34 +12,34 @@ const categories = [
   {
     name: "Breakfast Foods",
     image: "breakfast_foods.jpg",
-    link: "/breakfast-foods",
+    link: "/breakfastFoods",
   },
   {
     name: "Herbs, Spices & Seasoning",
     image: "herbs_spices_seasoning.jpg",
-    link: "/herbs-spices-seasoning",
+    link: "/herbsSpicesSeasoning",
   },
-  { name: "Flours & Meals", image: "flours_meals.jpg", link: "/flours-meals" },
-  { name: "Malt Drinks", image: "malt_drinks.jpg", link: "/malt-drinks" },
+  { name: "Flours & Meals", image: "flours_meals.jpg", link: "/floursMeals" },
+  { name: "Malt Drinks", image: "malt_drinks.jpg", link: "/maltDrinks" },
   { name: "Coffee", image: "coffee.jpg", link: "/coffee" },
   { name: "Water", image: "water.jpg", link: "/water" },
-  { name: "Cooking Oil", image: "cooking_oil.jpg", link: "/cooking-oil" },
+  { name: "Cooking Oil", image: "cooking_oil.jpg", link: "/cookingOil" },
   { name: "Juices", image: "juices.jpg", link: "/juices" },
-  { name: "Soft Drinks", image: "soft_drinks.jpeg", link: "/soft-drinks" },
+  { name: "Soft Drinks", image: "soft_drinks.jpeg", link: "/softDrinks" },
   {
     name: "Canned & Packaged Foods",
     image: "canned_packaged_foods.jpg",
-    link: "/canned-packaged-foods",
+    link: "/cannedPackagedFoods",
   },
   {
     name: "Candy & Chocolate",
     image: "candy_chocolate.png",
-    link: "/candy-chocolate",
+    link: "/candyChocolate",
   },
   {
     name: "Syrups, Sugars & Sweeteners",
     image: "syrups_sugars_sweeteners.jpg",
-    link: "/syrups-sugars-sweeteners",
+    link: "/syrupsSugarsSweeteners",
   },
 ];
 
