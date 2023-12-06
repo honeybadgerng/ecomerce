@@ -7,7 +7,7 @@ const categories = [
   {
     name: "Pasta & Noodles",
     image: "pasta_noodles.jpg",
-    link: "/pasta-noodles",
+    link: "/pastaAndNoodles",
   },
   {
     name: "Breakfast Foods",
