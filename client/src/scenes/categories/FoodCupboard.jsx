@@ -3,7 +3,7 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Grains & Rice", image: "grains_rice.jpg", link: "/grains-rice" },
+  { name: "Grains & Rice", image: "grains_rice.jpg", link: "/grainsAndRice" },
   {
     name: "Pasta & Noodles",
     image: "pasta_noodles.jpg",
