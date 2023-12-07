@@ -14,6 +14,8 @@ import GrainsAndRice from "./scenes/categories/GrainsAndRice";
 import Appliances from "./scenes/categories/Appliances";
 import SmallAppliances from "./scenes/categories/SmallAppliances";
 import BigAppliances from "./scenes/categories/BigAppliances";
+import Electronics from "./scenes/categories/Electronics";
+import Televisions from "./scenes/categories/Televisions";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -40,6 +42,8 @@ function App() {
           <Route path="/Appliances" element={<Appliances />} />
           <Route path="/SmallAppliances" element={<SmallAppliances />} />
           <Route path="/BigAppliances" element={<BigAppliances />} />
+          <Route path="/Electronics" element={<Electronics />} />
+          <Route path="/Televisions" element={<Televisions />} />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
