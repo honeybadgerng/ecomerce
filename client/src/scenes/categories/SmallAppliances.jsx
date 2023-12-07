@@ -3,47 +3,30 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Grains & Rice", image: "grains_rice.jpg", link: "/GrainsAndRice" },
+  { name: "Food Cupboard", image: "foodCupboard.jpg", link: "/FoodCupboard" },
   {
-    name: "Pasta & Noodles",
-    image: "pasta_noodles.jpg",
-    link: "/PastaAndNoodles",
+    name: "Beverages",
+    image: "beverages.jpg",
+    link: "/beverages",
   },
   {
-    name: "Breakfast Foods",
-    image: "breakfast_foods.jpg",
-    link: "/BreakfastFoods",
+    name: "Beer, Wine & Spirit",
+    image: "beerWineSpirits.jpeg",
+    link: "/beerWineSpirits",
   },
   {
-    name: "Herbs, Spices & Seasoning",
-    image: "herbs_spices_seasoning.jpg",
-    link: "/HerbsSpicesSeasoning",
-  },
-  { name: "Flours & Meals", image: "flours_meals.jpg", link: "/FloursMeals" },
-  { name: "Malt Drinks", image: "malt_drinks.jpg", link: "/MaltDrinks" },
-  { name: "Coffee", image: "coffee.jpg", link: "/Coffee" },
-  { name: "Water", image: "water.jpg", link: "/Water" },
-  { name: "Cooking Oil", image: "cooking_oil.jpg", link: "/CookingOil" },
-  { name: "Juices", image: "juices.jpg", link: "/Juices" },
-  { name: "Soft Drinks", image: "soft_drinks.jpeg", link: "/SoftDrinks" },
-  {
-    name: "Canned & Packaged Foods",
-    image: "canned_packaged_foods.jpg",
-    link: "/CannedPackagedFoods",
+    name: "Baby products",
+    image: "babyProducts.jpg",
+    link: "/babyProducts",
   },
   {
-    name: "Candy & Chocolate",
-    image: "candy_chocolate.png",
-    link: "/CandyChocolate",
-  },
-  {
-    name: "Syrups, Sugars & Sweeteners",
-    image: "syrups_sugars_sweeteners.jpg",
-    link: "/SyrupsSugarsSweeteners",
+    name: "Household cleaning products",
+    image: "householdCleaningProducts.jpg",
+    link: "/householdCleaningProducts",
   },
 ];
 
-const FoodCupboard = () => {
+const SmallAppliances = () => {
   const [images, setImages] = useState({});
 
   useEffect(() => {
@@ -65,7 +48,7 @@ const FoodCupboard = () => {
     <Grid container spacing={2} sx={{ marginTop: "80px" }}>
       <Grid item xs={12}>
         <Typography variant="h4" align="center" gutterBottom>
-          Food Cupboard
+          Small Appliances
         </Typography>
       </Grid>
 
@@ -96,4 +79,4 @@ const FoodCupboard = () => {
   );
 };
 
-export default FoodCupboard;
+export default SmallAppliances;

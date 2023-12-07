@@ -3,47 +3,25 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Grains & Rice", image: "grains_rice.jpg", link: "/GrainsAndRice" },
+  { name: "TELEVISION & VIDEO", image: "Television.jpg", link: "/Televisions" },
   {
-    name: "Pasta & Noodles",
-    image: "pasta_noodles.jpg",
-    link: "/PastaAndNoodles",
+    name: "CAMERAS & PHOTOS",
+    image: "Camera.jpg",
+    link: "/Cameras",
   },
   {
-    name: "Breakfast Foods",
-    image: "breakfast_foods.jpg",
-    link: "/BreakfastFoods",
+    name: "HOME AUDIOS",
+    image: "HomeTheatres.png",
+    link: "/Homeaudios",
   },
   {
-    name: "Herbs, Spices & Seasoning",
-    image: "herbs_spices_seasoning.jpg",
-    link: "/HerbsSpicesSeasoning",
-  },
-  { name: "Flours & Meals", image: "flours_meals.jpg", link: "/FloursMeals" },
-  { name: "Malt Drinks", image: "malt_drinks.jpg", link: "/MaltDrinks" },
-  { name: "Coffee", image: "coffee.jpg", link: "/Coffee" },
-  { name: "Water", image: "water.jpg", link: "/Water" },
-  { name: "Cooking Oil", image: "cooking_oil.jpg", link: "/CookingOil" },
-  { name: "Juices", image: "juices.jpg", link: "/Juices" },
-  { name: "Soft Drinks", image: "soft_drinks.jpeg", link: "/SoftDrinks" },
-  {
-    name: "Canned & Packaged Foods",
-    image: "canned_packaged_foods.jpg",
-    link: "/CannedPackagedFoods",
-  },
-  {
-    name: "Candy & Chocolate",
-    image: "candy_chocolate.png",
-    link: "/CandyChocolate",
-  },
-  {
-    name: "Syrups, Sugars & Sweeteners",
-    image: "syrups_sugars_sweeteners.jpg",
-    link: "/SyrupsSugarsSweeteners",
+    name: "Generators and Portable Power",
+    image: "GeneratorsAndInverters.jpg",
+    link: "/Generators",
   },
 ];
 
-const FoodCupboard = () => {
+const Electronics = () => {
   const [images, setImages] = useState({});
 
   useEffect(() => {
@@ -65,7 +43,7 @@ const FoodCupboard = () => {
     <Grid container spacing={2} sx={{ marginTop: "80px" }}>
       <Grid item xs={12}>
         <Typography variant="h4" align="center" gutterBottom>
-          Food Cupboard
+          Electronics
         </Typography>
       </Grid>
 
@@ -96,4 +74,4 @@ const FoodCupboard = () => {
   );
 };
 
-export default FoodCupboard;
+export default Electronics;

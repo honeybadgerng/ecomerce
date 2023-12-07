@@ -3,47 +3,19 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Grains & Rice", image: "grains_rice.jpg", link: "/GrainsAndRice" },
   {
-    name: "Pasta & Noodles",
-    image: "pasta_noodles.jpg",
-    link: "/PastaAndNoodles",
+    name: "Small Appliances",
+    image: "Blenders.png",
+    link: "/SmallAppliances",
   },
   {
-    name: "Breakfast Foods",
-    image: "breakfast_foods.jpg",
-    link: "/BreakfastFoods",
-  },
-  {
-    name: "Herbs, Spices & Seasoning",
-    image: "herbs_spices_seasoning.jpg",
-    link: "/HerbsSpicesSeasoning",
-  },
-  { name: "Flours & Meals", image: "flours_meals.jpg", link: "/FloursMeals" },
-  { name: "Malt Drinks", image: "malt_drinks.jpg", link: "/MaltDrinks" },
-  { name: "Coffee", image: "coffee.jpg", link: "/Coffee" },
-  { name: "Water", image: "water.jpg", link: "/Water" },
-  { name: "Cooking Oil", image: "cooking_oil.jpg", link: "/CookingOil" },
-  { name: "Juices", image: "juices.jpg", link: "/Juices" },
-  { name: "Soft Drinks", image: "soft_drinks.jpeg", link: "/SoftDrinks" },
-  {
-    name: "Canned & Packaged Foods",
-    image: "canned_packaged_foods.jpg",
-    link: "/CannedPackagedFoods",
-  },
-  {
-    name: "Candy & Chocolate",
-    image: "candy_chocolate.png",
-    link: "/CandyChocolate",
-  },
-  {
-    name: "Syrups, Sugars & Sweeteners",
-    image: "syrups_sugars_sweeteners.jpg",
-    link: "/SyrupsSugarsSweeteners",
+    name: "Large Appliances",
+    image: "Air ConditionersAndAccessories.jpg",
+    link: "/BigAppliances",
   },
 ];
 
-const FoodCupboard = () => {
+const Appliances = () => {
   const [images, setImages] = useState({});
 
   useEffect(() => {
@@ -65,7 +37,7 @@ const FoodCupboard = () => {
     <Grid container spacing={2} sx={{ marginTop: "80px" }}>
       <Grid item xs={12}>
         <Typography variant="h4" align="center" gutterBottom>
-          Food Cupboard
+          Appliances
         </Typography>
       </Grid>
 
@@ -96,4 +68,4 @@ const FoodCupboard = () => {
   );
 };
 
-export default FoodCupboard;
+export default Appliances;
