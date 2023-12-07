@@ -3,26 +3,62 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Food Cupboard", image: "foodCupboard.jpg", link: "/FoodCupboard" },
+  { name: "Heaters", image: "Heaters.jpg", link: "/Heaters" },
   {
-    name: "Beverages",
-    image: "beverages.jpg",
-    link: "/beverages",
+    name: "Fans",
+    image: "Fans.jpg",
+    link: "/Fans",
   },
   {
-    name: "Beer, Wine & Spirit",
-    image: "beerWineSpirits.jpeg",
-    link: "/beerWineSpirits",
+    name: "Air Purifiers",
+    image: "AirPurifiers.jpg",
+    link: "/AirPurifiers",
   },
   {
-    name: "Baby products",
-    image: "babyProducts.jpg",
-    link: "/babyProducts",
+    name: "Water Dispensers",
+    image: "WaterDispensers.jpg",
+    link: "/WaterDispensers",
   },
   {
-    name: "Household cleaning products",
-    image: "householdCleaningProducts.jpg",
-    link: "/householdCleaningProducts",
+    name: "Generators",
+    image: "GeneratorsAndInverters.jpg",
+    link: "/Generators",
+  },
+  {
+    name: "Inverters",
+    image: "GeneratorsAndInverters.jpg",
+    link: "/Inverters",
+  },
+  {
+    name: "Air Conditioners & Accessories",
+    image: "Air ConditionersAndAccessories.jpg",
+    link: "/AirConditionersAndAccessories",
+  },
+  {
+    name: "Freezers",
+    image: "Freezers.jpg",
+    link: "/Freezers",
+  },
+  {
+    name: "Range Hoods",
+    image: "RangeHoods.jpg",
+    link: "/RangeHoods",
+  },
+  {
+    name: "Fridges",
+    image: "Fridges.jpg",
+    link: "/Fridges",
+  },
+
+  {
+    name: "Washing Machines & Dryers",
+    image: "WashingMachinesAndDryers.jpg",
+    link: "/WashingMachinesAndDryers",
+  },
+  {
+    name: "Inverters",
+    image: "GeneratorsAndInverters.jpg",
+    link: "/Inverters",
   },
 ];
 
