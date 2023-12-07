@@ -11,7 +11,7 @@ const Item = ({ item, width }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [count, setCount] = useState(1);
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(true);
   const {
     palette: { neutral },
   } = useTheme();
@@ -25,7 +25,7 @@ const Item = ({ item, width }) => {
       <Box
         position="relative"
         onMouseOver={() => setIsHovered(true)}
-        onMouseOut={() => setIsHovered(false)}
+        onMouseOut={() => setIsHovered(true)}
       >
         <img
           alt={item.name}
