@@ -3,19 +3,30 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
+  { name: "Food Cupboard", image: "foodCupboard.jpg", link: "/FoodCupboard" },
   {
-    name: "Small Appliances",
-    image: "Blenders.png",
-    link: "/SmallAppliances",
+    name: "Beverages",
+    image: "beverages.jpg",
+    link: "/beverages",
   },
   {
-    name: "Large Appliances",
-    image: "Air ConditionersAndAccessories.jpg",
-    link: "/BigAppliances",
+    name: "Beer, Wine & Spirit",
+    image: "beerWineSpirits.jpeg",
+    link: "/beerWineSpirits",
+  },
+  {
+    name: "Baby products",
+    image: "babyProducts.jpg",
+    link: "/babyProducts",
+  },
+  {
+    name: "Household cleaning products",
+    image: "householdCleaningProducts.jpg",
+    link: "/householdCleaningProducts",
   },
 ];
 
-const Appliances = () => {
+const BigAppliances = () => {
   const [images, setImages] = useState({});
 
   useEffect(() => {
@@ -37,7 +48,7 @@ const Appliances = () => {
     <Grid container spacing={2} sx={{ marginTop: "80px" }}>
       <Grid item xs={12}>
         <Typography variant="h4" align="center" gutterBottom>
-          Appliances
+          Large Appliances
         </Typography>
       </Grid>
 
@@ -68,4 +79,4 @@ const Appliances = () => {
   );
 };
 
-export default Appliances;
+export default BigAppliances;
