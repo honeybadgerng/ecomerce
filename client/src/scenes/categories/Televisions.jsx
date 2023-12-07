@@ -10,7 +10,7 @@ import { setItems } from "../../state";
 
 const Televisions = () => {
   const dispatch = useDispatch();
-  const [value, setValue] = useState("Televisions");
+  const [value, setValue] = useState("televisions");
   const items = useSelector((state) => state.cart.items);
   const breakPoint = useMediaQuery("(min-width:600px)");
 
@@ -31,14 +31,14 @@ const Televisions = () => {
     getItems();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const grainsAndRiceItems = items.filter(
-    (item) => item.attributes.category === "Televisions"
+  const televisionsItems = items.filter(
+    (item) => item.attributes.category === "televisions"
   );
 
   return (
     <Box width="80%" margin="80px auto">
       <Typography variant="h3" textAlign="center">
-        Televisions
+        Televisions & <b>Videos</b>
       </Typography>
       <Tabs
         textColor="primary"
@@ -54,7 +54,7 @@ const Televisions = () => {
           },
         }}
       >
-        <Tab label="Televisions" value="Televisions" />
+        <Tab label="Televisions" value="televisions" />
       </Tabs>
       <Box
         margin="0 auto"
@@ -64,8 +64,8 @@ const Televisions = () => {
         rowGap="20px"
         columnGap="1.33%"
       >
-        {value === "Televisions" &&
-          grainsAndRiceItems.map((item) => (
+        {value === "televisions" &&
+          televisionsItems.map((item) => (
             <Item item={item} key={`${item.name}-${item.id}`} />
           ))}
       </Box>
