@@ -19,6 +19,26 @@ const categories = [
     image: "GeneratorsAndInverters.jpg",
     link: "/Generators",
   },
+  {
+    name: "Air Conditioners & Accessories",
+    image: "Air ConditionersAndAccessories.jpg",
+    link: "/AirConditionersAndAccessories",
+  },
+  {
+    name: "Fridges",
+    image: "Fridges.jpg",
+    link: "/Fridges",
+  },
+  {
+    name: "Washing Machines & Dryers",
+    image: "WashingMachinesAndDryers.jpg",
+    link: "/WashingMachinesAndDryers",
+  },
+  {
+    name: "Freezers",
+    image: "Freezers.jpg",
+    link: "/Freezers",
+  },
 ];
 
 const Electronics = () => {
