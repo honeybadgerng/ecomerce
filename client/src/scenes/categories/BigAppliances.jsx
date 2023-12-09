@@ -55,11 +55,6 @@ const categories = [
     image: "WashingMachinesAndDryers.jpg",
     link: "/WashingMachinesAndDryers",
   },
-  {
-    name: "Inverters",
-    image: "GeneratorsAndInverters.jpg",
-    link: "/Inverters",
-  },
 ];
 
 const BigAppliances = () => {
