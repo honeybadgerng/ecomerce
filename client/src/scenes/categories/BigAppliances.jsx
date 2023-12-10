@@ -26,7 +26,7 @@ const categories = [
   },
   {
     name: "Inverters",
-    image: "GeneratorsAndInverters.jpg",
+    image: "inverters.jpg",
     link: "/Inverters",
   },
   {
