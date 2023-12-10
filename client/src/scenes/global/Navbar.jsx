@@ -12,6 +12,7 @@ import {
   ShoppingBagOutlined,
   MenuOutlined,
   SearchOutlined,
+  Close,
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import { setIsCartOpen } from "../../state";
@@ -88,7 +89,7 @@ function Navbar() {
             </IconButton>
           </Badge>
           <IconButton onClick={handleMenuClick} sx={{ color: "black" }}>
-            <MenuOutlined />
+            {isMenuOpen ? <Close /> : <MenuOutlined />}
           </IconButton>
         </Box>
       </Box>
