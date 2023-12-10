@@ -16,7 +16,7 @@ const Item = ({ item, width }) => {
     palette: { neutral },
   } = useTheme();
 
-  const { category, price, name, image } = item.attributes;
+  const { price, name, image } = item.attributes;
   // Check if 'image' is defined and has the required properties
   const url = image?.data?.attributes?.formats?.thumbnail?.url || "";
 
@@ -71,11 +71,8 @@ const Item = ({ item, width }) => {
       </Box>
 
       <Box mt="3px">
-        <Typography variant="subtitle2" color={neutral.dark}>
-          {category
-            .replace(/([A-Z])/g, " $1")
-            .replace(/^./, (str) => str.toUpperCase())}
-        </Typography>
+        <Typography variant="subtitle2" color={neutral.dark}></Typography>
+        {/* removed to fix bug */}
         <Typography>{name}</Typography>
         <Typography fontWeight="bold">₦{price}</Typography>
       </Box>
