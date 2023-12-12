@@ -12,7 +12,7 @@ const categories = [
   {
     name: "HOME AUDIOS",
     image: "HomeTheatres.png",
-    link: "/Homeaudios",
+    link: "/HomeTheatres",
   },
   {
     name: "Generators and Portable Power",
