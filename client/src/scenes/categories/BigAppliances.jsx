@@ -6,7 +6,7 @@ const categories = [
   { name: "Heaters", image: "Heaters.jpg", link: "/Heaters" },
   {
     name: "Fans",
-    image: "Fans.jpg",
+    image: "fan.png",
     link: "/Fans",
   },
   {
