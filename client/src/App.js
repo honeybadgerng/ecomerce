@@ -18,6 +18,7 @@ import Electronics from "./scenes/categories/Electronics";
 import Televisions from "./scenes/categories/Televisions";
 import Cameras from "./scenes/categories/Cameras";
 import HomeTheatres from "./scenes/categories/HomeTheatres";
+import GeneratorsAndInverters from "./scenes/categories/GeneratorsAndInverters";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -48,6 +49,10 @@ function App() {
           <Route path="/Televisions" element={<Televisions />} />
           <Route path="/Cameras" element={<Cameras />} />
           <Route path="/HomeTheatres" element={<HomeTheatres />} />
+          <Route
+            path="/GeneratorsAndInverters"
+            element={<GeneratorsAndInverters />}
+          />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />

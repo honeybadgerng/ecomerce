@@ -17,7 +17,7 @@ const categories = [
   {
     name: "Generators and Portable Power",
     image: "GeneratorsAndInverters.jpg",
-    link: "/Generators",
+    link: "/GeneratorsAndInverters",
   },
   {
     name: "Air Conditioners & Accessories",
