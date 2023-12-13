@@ -25,9 +25,9 @@ const categories = [
     link: "/AirConditionersAndAccessories",
   },
   {
-    name: "Fridges",
+    name: "Refrigerators",
     image: "Fridges.jpg",
-    link: "/Fridges",
+    link: "/Refrigerators",
   },
   {
     name: "Washing Machines & Dryers",

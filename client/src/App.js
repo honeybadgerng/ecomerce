@@ -18,9 +18,9 @@ import Electronics from "./scenes/categories/Electronics";
 import Televisions from "./scenes/categories/Televisions";
 import Cameras from "./scenes/categories/Cameras";
 import HomeTheatres from "./scenes/categories/HomeTheatres";
-
 import GeneratorsAndInverters from "./scenes/categories/GeneratorsAndInverters";
 import AirConditionersAndAccessories from "./scenes/categories/AirConditionersAndAccessories";
+import Refrigerators from "./scenes/categories/Refrigerators";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -59,6 +59,7 @@ function App() {
             path="/AirConditionersAndAccessories"
             element={<AirConditionersAndAccessories />}
           />
+          <Route path="/Refrigerators" element={<Refrigerators />} />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
