@@ -26,6 +26,7 @@ import Freezers from "./scenes/categories/Freezers";
 import Fans from "./scenes/categories/Fans";
 import Heaters from "./scenes/categories/Heaters";
 import AirPurifiers from "./scenes/categories/AirPurifiers";
+import WaterDispensers from "./scenes/categories/WaterDispensers";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -73,6 +74,8 @@ function App() {
           <Route path="/Fans" element={<Fans />} />
           <Route path="/Heaters" element={<Heaters />} />
           <Route path="/AirPurifiers" element={<AirPurifiers />} />
+          <Route path="/WaterDispensers" element={<WaterDispensers />} />
+
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
