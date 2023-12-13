@@ -21,6 +21,7 @@ import HomeTheatres from "./scenes/categories/HomeTheatres";
 import GeneratorsAndInverters from "./scenes/categories/GeneratorsAndInverters";
 import AirConditionersAndAccessories from "./scenes/categories/AirConditionersAndAccessories";
 import Refrigerators from "./scenes/categories/Refrigerators";
+import WashingMachinesAndDryers from "./scenes/categories/WashingMachinesAndDryers";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -60,6 +61,10 @@ function App() {
             element={<AirConditionersAndAccessories />}
           />
           <Route path="/Refrigerators" element={<Refrigerators />} />
+          <Route
+            path="/WashingMachinesAndDryers"
+            element={<WashingMachinesAndDryers />}
+          />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
