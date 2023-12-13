@@ -24,6 +24,7 @@ import Refrigerators from "./scenes/categories/Refrigerators";
 import WashingMachinesAndDryers from "./scenes/categories/WashingMachinesAndDryers";
 import Freezers from "./scenes/categories/Freezers";
 import Fans from "./scenes/categories/Fans";
+import Heaters from "./scenes/categories/Heaters";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -69,6 +70,7 @@ function App() {
           />
           <Route path="/Freezers" element={<Freezers />} />
           <Route path="/Fans" element={<Fans />} />
+          <Route path="/Heaters" element={<Heaters />} />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
