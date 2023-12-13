@@ -45,9 +45,9 @@ const categories = [
     link: "/RangeHoods",
   },
   {
-    name: "Fridges",
+    name: "Refrigerators",
     image: "Fridges.jpg",
-    link: "/Fridges",
+    link: "/Refrigerators",
   },
 
   {

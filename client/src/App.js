@@ -17,6 +17,19 @@ import BigAppliances from "./scenes/categories/BigAppliances";
 import Electronics from "./scenes/categories/Electronics";
 import Televisions from "./scenes/categories/Televisions";
 import Cameras from "./scenes/categories/Cameras";
+import HomeTheatres from "./scenes/categories/HomeTheatres";
+import GeneratorsAndInverters from "./scenes/categories/GeneratorsAndInverters";
+import AirConditionersAndAccessories from "./scenes/categories/AirConditionersAndAccessories";
+import Refrigerators from "./scenes/categories/Refrigerators";
+import WashingMachinesAndDryers from "./scenes/categories/WashingMachinesAndDryers";
+import Freezers from "./scenes/categories/Freezers";
+import Fans from "./scenes/categories/Fans";
+import Heaters from "./scenes/categories/Heaters";
+import AirPurifiers from "./scenes/categories/AirPurifiers";
+import WaterDispensers from "./scenes/categories/WaterDispensers";
+import Generators from "./scenes/categories/Generators";
+import Inverters from "./scenes/categories/Inverters";
+import RangeHoods from "./scenes/categories/RangeHoods";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -46,6 +59,28 @@ function App() {
           <Route path="/Electronics" element={<Electronics />} />
           <Route path="/Televisions" element={<Televisions />} />
           <Route path="/Cameras" element={<Cameras />} />
+          <Route path="/HomeTheatres" element={<HomeTheatres />} />
+          <Route
+            path="/GeneratorsAndInverters"
+            element={<GeneratorsAndInverters />}
+          />
+          <Route
+            path="/AirConditionersAndAccessories"
+            element={<AirConditionersAndAccessories />}
+          />
+          <Route path="/Refrigerators" element={<Refrigerators />} />
+          <Route
+            path="/WashingMachinesAndDryers"
+            element={<WashingMachinesAndDryers />}
+          />
+          <Route path="/Freezers" element={<Freezers />} />
+          <Route path="/Fans" element={<Fans />} />
+          <Route path="/Heaters" element={<Heaters />} />
+          <Route path="/AirPurifiers" element={<AirPurifiers />} />
+          <Route path="/WaterDispensers" element={<WaterDispensers />} />
+          <Route path="/Generators" element={<Generators />} />
+          <Route path="/Inverters" element={<Inverters />} />
+          <Route path="/RangeHoods" element={<RangeHoods />} />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />

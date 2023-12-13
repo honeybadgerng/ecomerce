@@ -12,12 +12,12 @@ const categories = [
   {
     name: "HOME AUDIOS",
     image: "HomeTheatres.png",
-    link: "/Homeaudios",
+    link: "/HomeTheatres",
   },
   {
     name: "Generators and Portable Power",
     image: "GeneratorsAndInverters.jpg",
-    link: "/Generators",
+    link: "/GeneratorsAndInverters",
   },
   {
     name: "Air Conditioners & Accessories",
@@ -25,9 +25,9 @@ const categories = [
     link: "/AirConditionersAndAccessories",
   },
   {
-    name: "Fridges",
+    name: "Refrigerators",
     image: "Fridges.jpg",
-    link: "/Fridges",
+    link: "/Refrigerators",
   },
   {
     name: "Washing Machines & Dryers",
