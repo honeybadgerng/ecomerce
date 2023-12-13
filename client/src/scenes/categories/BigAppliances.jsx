@@ -47,7 +47,7 @@ const categories = [
   {
     name: "Fridges",
     image: "Fridges.jpg",
-    link: "/Fridges",
+    link: "/Refrigerators",
   },
 
   {
