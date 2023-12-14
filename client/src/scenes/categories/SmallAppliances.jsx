@@ -3,26 +3,161 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Food Cupboard", image: "foodCupboard.jpg", link: "/FoodCupboard" },
+  { name: "Blenders", image: "foodCupboard.jpg", link: "/Blenders" },
   {
-    name: "Beverages",
+    name: "Juicers",
     image: "beverages.jpg",
-    link: "/beverages",
+    link: "/Juicers",
   },
   {
-    name: "Beer, Wine & Spirit",
+    name: "Mixers",
     image: "beerWineSpirits.jpeg",
-    link: "/beerWineSpirits",
+    link: "/Mixers",
   },
   {
-    name: "Baby products",
+    name: "Toasters",
     image: "babyProducts.jpg",
-    link: "/babyProducts",
+    link: "/Toasters",
   },
   {
-    name: "Household cleaning products",
+    name: "Microwave Ovens",
     image: "householdCleaningProducts.jpg",
-    link: "/householdCleaningProducts",
+    link: "/MicrowaveOvens",
+  },
+  {
+    name: "Soda Makers",
+    image: "householdCleaningProducts.jpg",
+    link: "/SodaMakers",
+  },
+  {
+    name: "Steamers",
+    image: "householdCleaningProducts.jpg",
+    link: "/Steamers",
+  },
+  {
+    name: "Air Fryers",
+    image: "householdCleaningProducts.jpg",
+    link: "/AirFryers",
+  },
+  {
+    name: "Bread Machines",
+    image: "householdCleaningProducts.jpg",
+    link: "/BreadMachines",
+  },
+  {
+    name: "Beer Keg Refrigerators",
+    image: "householdCleaningProducts.jpg",
+    link: "/BeerKegRefrigerators",
+  },
+  {
+    name: "Beverage Refrigerators",
+    image: "householdCleaningProducts.jpg",
+    link: "/BeverageRefrigerators",
+  },
+  {
+    name: "Deep Fryers",
+    image: "householdCleaningProducts.jpg",
+    link: "/DeepFryers",
+  },
+  {
+    name: "Hot Pots",
+    image: "householdCleaningProducts.jpg",
+    link: "/HotPots",
+  },
+  {
+    name: "Ice Cream Machines",
+    image: "householdCleaningProducts.jpg",
+    link: "/IceCreamMachines",
+  },
+  {
+    name: "Deep Fryers",
+    image: "householdCleaningProducts.jpg",
+    link: "/DeepFryers",
+  },
+  {
+    name: "Food Processors",
+    image: "householdCleaningProducts.jpg",
+    link: "/FoodProcessors",
+  },
+  {
+    name: "Electric Woks",
+    image: "householdCleaningProducts.jpg",
+    link: "/ElectricWoks",
+  },
+  {
+    name: "Electric Pressure Cookers",
+    image: "householdCleaningProducts.jpg",
+    link: "/ElectricPressureCookers",
+  },
+  {
+    name: "Electric Cookware",
+    image: "householdCleaningProducts.jpg",
+    link: "/ElectricCookware",
+  },
+  {
+    name: "Electric Drink Mixers",
+    image: "householdCleaningProducts.jpg",
+    link: "/ElectricDrinkMixers",
+  },
+  {
+    name: "Electric Skillets",
+    image: "householdCleaningProducts.jpg",
+    link: "/ElectricSkillets",
+  },
+  {
+    name: "Electric Griddles",
+    image: "householdCleaningProducts.jpg",
+    link: "/ElectricGriddles",
+  },
+  {
+    name: "Compact Refrigerators",
+    image: "householdCleaningProducts.jpg",
+    link: "/CompactRefrigerators",
+  },
+  {
+    name: "Contact Grills",
+    image: "householdCleaningProducts.jpg",
+    link: "/ContactGrills",
+  },
+  {
+    name: "Conventional Burners",
+    image: "householdCleaningProducts.jpg",
+    link: "/Burners",
+  },
+  {
+    name: "Rice Cookers",
+    image: "householdCleaningProducts.jpg",
+    link: "/RiceCookers",
+  },
+  {
+    name: "Slow Cookers",
+    image: "householdCleaningProducts.jpg",
+    link: "/SlowCookers",
+  },
+  {
+    name: "Waffle Irons",
+    image: "householdCleaningProducts.jpg",
+    link: "/WaffleIrons",
+  },
+  {
+    name: "Wine Cellars",
+    image: "householdCleaningProducts.jpg",
+    link: "/WineCellars",
+  },
+  {
+    name: "Specialty Appliances",
+    image: "householdCleaningProducts.jpg",
+    link: "/SpecialtyAppliances",
+  },
+  {
+    name: "Small Appliance Sets",
+    image: "householdCleaningProducts.jpg",
+    link: "/SmallApplianceSets",
+  },
+  {
+    name: "Coffee, Tea & Espresso Appliances",
+    image: "householdCleaningProducts.jpg",
+    link: "/CoffeeAndTeaAppliances",
   },
 ];
 
