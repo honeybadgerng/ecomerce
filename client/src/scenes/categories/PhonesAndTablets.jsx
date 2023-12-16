@@ -3,15 +3,15 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Mobile phones", image: "Television.jpg", link: "/MobilePhones" },
+  { name: "Mobile phones", image: "MobilePhones.png", link: "/MobilePhones" },
   {
     name: "Tablets",
-    image: "Camera.jpg",
+    image: "Tablets.jpg",
     link: "/Tablets",
   },
   {
     name: "Mobile accessories",
-    image: "HomeTheatres.png",
+    image: "EarPhones.jpg",
     link: "/MobileAccessories",
   },
 ];
