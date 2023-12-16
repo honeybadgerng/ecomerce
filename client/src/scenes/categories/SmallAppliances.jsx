@@ -3,160 +3,156 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Blenders", image: "foodCupboard.jpg", link: "/Blenders" },
+  { name: "Blenders", image: "Blenders.jpg", link: "/Blenders" },
   {
     name: "Juicers",
-    image: "beverages.jpg",
+    image: "Juicers.jpg",
     link: "/Juicers",
   },
   {
     name: "Mixers",
-    image: "beerWineSpirits.jpeg",
+    image: "Mixers.jpeg",
     link: "/Mixers",
   },
   {
     name: "Toasters",
-    image: "babyProducts.jpg",
+    image: "Toasters.jpg",
     link: "/Toasters",
   },
   {
     name: "Microwave Ovens",
-    image: "householdCleaningProducts.jpg",
+    image: "MicrowaveOvens.png",
     link: "/MicrowaveOvens",
   },
   {
     name: "Soda Makers",
-    image: "householdCleaningProducts.jpg",
+    image: "SodaMakers.jpg",
     link: "/SodaMakers",
   },
   {
     name: "Steamers",
-    image: "householdCleaningProducts.jpg",
+    image: "Steamers.jpg",
     link: "/Steamers",
   },
   {
     name: "Air Fryers",
-    image: "householdCleaningProducts.jpg",
+    image: "AirFryers.jpg",
     link: "/AirFryers",
   },
   {
     name: "Bread Machines",
-    image: "householdCleaningProducts.jpg",
+    image: "BreadMachines.jpg",
     link: "/BreadMachines",
   },
   {
     name: "Beer Keg Refrigerators",
-    image: "householdCleaningProducts.jpg",
+    image: "BeerKegRefrigerators.jpg",
     link: "/BeerKegRefrigerators",
   },
   {
     name: "Beverage Refrigerators",
-    image: "householdCleaningProducts.jpg",
+    image: "BeverageRefrigerators.jpg",
     link: "/BeverageRefrigerators",
   },
   {
     name: "Deep Fryers",
-    image: "householdCleaningProducts.jpg",
+    image: "DeepFryers.jpg",
     link: "/DeepFryers",
   },
   {
     name: "Hot Pots",
-    image: "householdCleaningProducts.jpg",
+    image: "HotPots.jpg",
     link: "/HotPots",
   },
   {
     name: "Ice Cream Machines",
-    image: "householdCleaningProducts.jpg",
+    image: "IceCreamMachines.jpg",
     link: "/IceCreamMachines",
   },
-  {
-    name: "Deep Fryers",
-    image: "householdCleaningProducts.jpg",
-    link: "/DeepFryers",
-  },
+
   {
     name: "Food Processors",
-    image: "householdCleaningProducts.jpg",
+    image: "FoodProcessors.jpg",
     link: "/FoodProcessors",
   },
   {
     name: "Electric Woks",
-    image: "householdCleaningProducts.jpg",
+    image: "ElectricWoks.jpg",
     link: "/ElectricWoks",
   },
   {
     name: "Electric Pressure Cookers",
-    image: "householdCleaningProducts.jpg",
+    image: "ElectricPressureCookers.jpg",
     link: "/ElectricPressureCookers",
   },
   {
     name: "Electric Cookware",
-    image: "householdCleaningProducts.jpg",
+    image: "ElectricCookware.jpg",
     link: "/ElectricCookware",
   },
   {
     name: "Electric Drink Mixers",
-    image: "householdCleaningProducts.jpg",
+    image: "ElectricDrinkMixers.jpg",
     link: "/ElectricDrinkMixers",
   },
   {
     name: "Electric Skillets",
-    image: "householdCleaningProducts.jpg",
+    image: "ElectricSkillets.jpg",
     link: "/ElectricSkillets",
   },
   {
     name: "Electric Griddles",
-    image: "householdCleaningProducts.jpg",
+    image: "ElectricGriddles.jpg",
     link: "/ElectricGriddles",
   },
   {
     name: "Compact Refrigerators",
-    image: "householdCleaningProducts.jpg",
+    image: "CompactRefrigerators.jpg",
     link: "/CompactRefrigerators",
   },
   {
     name: "Contact Grills",
-    image: "householdCleaningProducts.jpg",
+    image: "ContactGrills.jpg",
     link: "/ContactGrills",
   },
   {
     name: "Conventional Burners",
-    image: "householdCleaningProducts.jpg",
+    image: "ConventionalBurners.jpg",
     link: "/Burners",
   },
   {
     name: "Rice Cookers",
-    image: "householdCleaningProducts.jpg",
+    image: "RiceCookers.jpg",
     link: "/RiceCookers",
   },
   {
     name: "Slow Cookers",
-    image: "householdCleaningProducts.jpg",
+    image: "SlowCookers.jpg",
     link: "/SlowCookers",
   },
   {
     name: "Waffle Irons",
-    image: "householdCleaningProducts.jpg",
+    image: "WaffleIrons.jpg",
     link: "/WaffleIrons",
   },
   {
     name: "Wine Cellars",
-    image: "householdCleaningProducts.jpg",
+    image: "WineCellars.jpg",
     link: "/WineCellars",
   },
   {
     name: "Specialty Appliances",
-    image: "householdCleaningProducts.jpg",
+    image: "SpecialtyAppliances.jpg",
     link: "/SpecialtyAppliances",
   },
   {
     name: "Small Appliance Sets",
-    image: "householdCleaningProducts.jpg",
+    image: "CoffeeTeaEspressoAppliances.jpg",
     link: "/SmallApplianceSets",
   },
   {
     name: "Coffee, Tea & Espresso Appliances",
-    image: "householdCleaningProducts.jpg",
+    image: "CoffeeMakers.jpg",
     link: "/CoffeeAndTeaAppliances",
   },
 ];
@@ -210,6 +206,24 @@ const SmallAppliances = () => {
           </Paper>
         </Grid>
       ))}
+      <Typography variant="paragraph" align="center" gutterBottom>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium
+        maxime animi debitis. Id, saepe? Labore blanditiis, alias quod et aut
+        voluptates in distinctio rem totam accusantium unde esse fugit velit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat eum
+        saepe dolorum, nam doloremque eius molestias expedita cumque quas atque?
+        Voluptate neque saepe ullam aspernatur quaerat ipsam optio sint? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. At dicta accusamus
+        iure ipsum quae facere perspiciatis suscipit reiciendis sint iste
+        explicabo quidem dolores consequuntur, architecto dolorem natus hic,
+        odio saepe! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+        nisi, praesentium eos, facere sit, ullam molestias nam sunt officia ipsa
+        nihil asperiores nostrum dolores sapiente voluptatum ipsam a quam?
+        Repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Autem rerum, repellat, corrupti totam, culpa eligendi nihil ut officiis
+        mollitia maxime beatae commodi ipsum ad in et repellendus numquam
+        temporibus quia!
+      </Typography>
     </Grid>
   );
 };
