@@ -9,6 +9,7 @@ import Checkout from "./scenes/checkout/Checkout";
 import Confirmation from "./scenes/checkout/Confirmation";
 import SupermarketPage from "./scenes/categories/SupermarketPage";
 import Supermarket from "./scenes/categories/Supermarket";
+import PhonesAndTablets from "./scenes/categories/PhonesAndTablets";
 import FoodCupboard from "./scenes/categories/FoodCupboard";
 import GrainsAndRice from "./scenes/categories/GrainsAndRice";
 import Appliances from "./scenes/categories/Appliances";
@@ -50,6 +51,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/SupermarketPage" element={<SupermarketPage />} />
+          <Route path="/PhonesAndTablets" element={<PhonesAndTablets />} />
           <Route path="/Supermarket" element={<Supermarket />} />
           <Route path="/FoodCupboard" element={<FoodCupboard />} />
           <Route path="/GrainsAndRice" element={<GrainsAndRice />} />
@@ -81,6 +83,7 @@ function App() {
           <Route path="/Generators" element={<Generators />} />
           <Route path="/Inverters" element={<Inverters />} />
           <Route path="/RangeHoods" element={<RangeHoods />} />
+
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />

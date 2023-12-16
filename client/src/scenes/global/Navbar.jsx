@@ -120,8 +120,8 @@ function Navbar() {
               Appliances
             </RouterLink>
           </MenuItem>
-          <MenuItem onClick={() => navigate("Phones & Tablets")}>
-            <RouterLink to="/phonesAndTablets" color="inherit">
+          <MenuItem onClick={() => navigate("PhonesAndTablets")}>
+            <RouterLink to="/PhonesAndTablets" color="inherit">
               Phones & Tablets
             </RouterLink>
           </MenuItem>
