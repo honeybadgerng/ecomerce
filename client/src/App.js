@@ -31,6 +31,7 @@ import WaterDispensers from "./scenes/categories/WaterDispensers";
 import Generators from "./scenes/categories/Generators";
 import Inverters from "./scenes/categories/Inverters";
 import RangeHoods from "./scenes/categories/RangeHoods";
+import MobilePhones from "./scenes/categories/MobilePhones";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -83,7 +84,7 @@ function App() {
           <Route path="/Generators" element={<Generators />} />
           <Route path="/Inverters" element={<Inverters />} />
           <Route path="/RangeHoods" element={<RangeHoods />} />
-
+          <Route path="/MobilePhones" element={<MobilePhones />} />
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
