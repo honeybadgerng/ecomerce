@@ -3,57 +3,57 @@ import { Grid, Paper, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { name: "Apple (Iphone)", image: "MobilePhones.png", link: "/MobilePhones" },
+  { name: "Apple (Ipads)", image: "iphone.jpg", link: "/Ipads" },
   {
     name: "Samsung",
-    image: "Tablets.jpg",
-    link: "/Tablets",
+    image: "Samsung.jpg",
+    link: "/SamsungTablets",
   },
   {
     name: "Nokia",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Nokia.jpg",
+    link: "/NokiaTablets",
   },
   {
     name: "Tecno",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Tecno.jpg",
+    link: "/TecnoTablets",
   },
   {
     name: "Infinix",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Infinix.jpg",
+    link: "/InfinixTablets",
   },
   {
     name: "Oppo",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Oppo.jpg",
+    link: "/OppoTablets",
   },
   {
     name: "Hauwei",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Hauwei.jpg",
+    link: "/HauweiTablets",
   },
   {
     name: "Innjoo",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Innjoo.png",
+    link: "/InnjooTablets",
   },
   {
     name: "Itel",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Itel.png",
+    link: "/ItelTablets",
   },
   {
     name: "Lenovo",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Lenovo.jpg",
+    link: "/LenovoTablets",
   },
 
   {
     name: "Sony",
-    image: "EarPhones.jpg",
-    link: "/MobileAccessories",
+    image: "Sony.jpg",
+    link: "/SonyTablets",
   },
 ];
 
