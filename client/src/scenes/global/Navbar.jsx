@@ -53,7 +53,7 @@ function Navbar() {
           sx={{ "&:hover": { cursor: "pointer" } }}
           color={shades.secondary[500]}
         >
-          eMile12
+          Xclusive Mart
         </Box>
         <Box
           display="flex"
