@@ -24,7 +24,7 @@ function Footer() {
             mb="30px"
             color={shades.secondary[500]}
           >
-            eMile12
+            Xclusive Mart
           </Typography>
           <div>We are a fast growing online store.</div>
         </Box>
@@ -53,9 +53,9 @@ function Footer() {
           <Typography variant="h4" fontWeight="bold" mb="30px">
             Contact Us
           </Typography>
-          <Typography mb="30px">40, Abudu Street, Ogudu, Lagos.</Typography>
+          <Typography mb="30px">No 68</Typography>
           <Typography mb="30px" sx={{ wordWrap: "break-word" }}>
-            Email: connect@emile12.com
+            Email: connect@xclusivemart.com
           </Typography>
           <Typography mb="30px">+2348059522376</Typography>
         </Box>
