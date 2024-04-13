@@ -34,6 +34,9 @@ import RangeHoods from "./scenes/categories/RangeHoods";
 import MobilePhones from "./scenes/categories/MobilePhones";
 import Tablets from "./scenes/categories/Tablets";
 import MobileAccessories from "./scenes/categories/MobileAccessories";
+import Post from "./components/Post";
+import PostDetails from "./scenes/postDetails/PostDetails";
+import Blogs from "./scenes/blogs/Blogs";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -92,6 +95,9 @@ function App() {
           <Route path="item/:itemId" element={<ItemDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
+          <Route path="post/:postId" element={<PostDetails />} />
+          <Route path="/Post" element={<Post />} />
+          <Route path="/Blogs" element={<Blogs />} />
         </Routes>
         <CartMenu />
         <Footer />

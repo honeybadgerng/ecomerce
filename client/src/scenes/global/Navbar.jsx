@@ -105,6 +105,11 @@ function Navbar() {
           boxShadow="0px 4px 4px rgba(0, 0, 0, 0.1)"
           zIndex="3"
         >
+          <MenuItem onClick={() => navigate("blogs")}>
+            <RouterLink to="/blogs" color="inherit">
+              Blogs
+            </RouterLink>
+          </MenuItem>
           <MenuItem onClick={() => navigate("Supermarket")}>
             <RouterLink to="/Supermarket" color="inherit">
               Supermarket
