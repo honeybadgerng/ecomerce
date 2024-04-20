@@ -14,31 +14,31 @@ const Posts = () => {
   const [postsPerPage] = useState(10);
   const breakPoint = useMediaQuery("(min-width:600px)");
 
-  // Fetch author from the API
-  async function getAuthor() {
-    try {
-      const response = await fetch(
-        "https://emile12server.onrender.com/api/posts?populate[0]=author",
-        {
-          method: "GET",
-        }
-      );
-      const author = await response.json();
-      setAuthor(author.data);
-      console.log(author);
-    } catch (error) {
-      console.error("Error fetching posts:", error);
-    }
-  }
+  // // Fetch author from the API
+  // async function getAuthor() {
+  //   try {
+  //     const response = await fetch(
+  //       "https://emile12server.onrender.com/api/posts?populate[0]=author",
+  //       {
+  //         method: "GET",
+  //       }
+  //     );
+  //     const author = await response.json();
+  //     setAuthor(author.data);
+  //     console.log(author);
+  //   } catch (error) {
+  //     console.error("Error fetching posts:", error);
+  //   }
+  // }
 
-  useEffect(() => {
-    getAuthor();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  // useEffect(() => {
+  //   getAuthor();
+  // }, []); // eslint-disable-line react-hooks/exhaustive-deps
   // Fetch posts from the API
   async function getPosts() {
     try {
       const response = await fetch(
-        "https://emile12server.onrender.com/api/posts?populate=image",
+        "https://emile12server.onrender.com/api/posts?populate=image,author",
         {
           method: "GET",
         }

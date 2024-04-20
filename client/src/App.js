@@ -93,6 +93,7 @@ function App() {
           <Route path="/MobileAccessories" element={<MobileAccessories />} />
           <Route path="/Tablets" element={<Tablets />} />
           <Route path="item/:itemId" element={<ItemDetails />} />
+          <Route path="post/:postId" element={<PostDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
           <Route path="post/:postId" element={<PostDetails />} />
