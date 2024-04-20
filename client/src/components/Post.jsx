@@ -8,12 +8,13 @@ const Post = ({ post, width }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   // Access post attributes
-  const { Title, Excerpt, image, author } = post.attributes;
-  const url = image?.data?.attributes?.formats?.thumbnail?.url || "";
+  const { Title, Excerpt, image } = post.attributes;
+  const url =
+    image?.data?.attributes?.formats?.thumbnail?.url || "no image found";
 
   // Access author's name
   const authorName =
-    post?.attributes?.author?.data?.attributes?.Name || "Moshood Raji";
+    post?.attributes?.author?.data?.attributes?.Name || "unknown author ";
 
   return (
     <Box width={width}>
