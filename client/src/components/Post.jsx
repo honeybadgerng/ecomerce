@@ -7,8 +7,13 @@ const Post = ({ post, width }) => {
   const navigate = useNavigate();
   const [isHovered, setIsHovered] = useState(false);
 
-  const { author, title, Excerpt, image } = post.attributes;
+  // Access post attributes
+  const { Title, Excerpt, image, author } = post.attributes;
   const url = image?.data?.attributes?.formats?.thumbnail?.url || "";
+
+  // Access author's name
+  const authorName =
+    post?.attributes?.author?.data?.attributes?.Name || "Moshood Raji";
 
   return (
     <Box width={width}>
@@ -20,7 +25,7 @@ const Post = ({ post, width }) => {
         style={{ cursor: "pointer" }}
       >
         <img
-          alt={title}
+          alt={Title}
           width="300px"
           height="400px"
           src={`${url}`} // Assuming 'featuredImage' is an object with a 'url' property
@@ -36,7 +41,7 @@ const Post = ({ post, width }) => {
             borderRadius="3px"
           >
             <Typography variant="body2" fontWeight="bold">
-              {author.Name}
+              {authorName}
             </Typography>
             <Typography variant="body2" fontWeight="bold">
               {new Date(post.attributes.publishedAt).toLocaleDateString()}
@@ -46,10 +51,10 @@ const Post = ({ post, width }) => {
       </Box>
 
       <Box mt={2}>
+        <Typography variant="h6">{Title}</Typography>
         <Typography variant="subtitle2" color="textSecondary">
           {Excerpt}
         </Typography>
-        <Typography variant="h6">{title}</Typography>
       </Box>
     </Box>
   );
