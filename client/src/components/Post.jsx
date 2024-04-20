@@ -51,7 +51,11 @@ const Post = ({ post, width }) => {
         )}
       </Box>
 
-      <Box mt={2}>
+      <Box
+        mt={2}
+        onClick={() => navigate(`/post/${post.id}`)}
+        style={{ cursor: "pointer" }}
+      >
         <Typography variant="h6">{Title}</Typography>
         <Typography variant="subtitle2" color="textSecondary">
           {Excerpt}
