@@ -10,9 +10,9 @@ const HeroSection = () => {
       alignItems="center"
       textAlign="center"
       padding="0 20px"
-      backgroundImage="url('../../assets/hero/hero-1.png')" // Replace 'path/to/your/image.jpg' with the actual path to your image
-      backgroundSize="cover"
-      backgroundPosition="center"
+      // backgroundImage={`url(${process.env.PUBLIC_URL}/assets/hero/hero-1.png)`} // Corrected the URL for the background image
+      // backgroundSize="cover"
+      // backgroundPosition="center"
     >
       <Box
         maxWidth="600px"
@@ -20,7 +20,6 @@ const HeroSection = () => {
         padding="20px"
         borderRadius="8px"
       >
-        {" "}
         {/* Added a semi-transparent background */}
         <Typography variant="h2" gutterBottom>
           Welcome to Xclusive Mart
