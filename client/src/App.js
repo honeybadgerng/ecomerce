@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./scenes/home/Home";
 import Navbar from "./scenes/global/Navbar";
+import ComingSoon from "./scenes/global/ComingSoon";
 import Footer from "./scenes/global/Footer";
 import ItemDetails from "./scenes/itemDetails/ItemDetails";
 import CartMenu from "./scenes/global/CartMenu";
@@ -99,6 +100,7 @@ function App() {
           <Route path="post/:postId" element={<PostDetails />} />
           <Route path="/Post" element={<Post />} />
           <Route path="/Blogs" element={<Blogs />} />
+          <Route path="/ComingSoon" element={<ComingSoon />} />
         </Routes>
         <CartMenu />
         <Footer />

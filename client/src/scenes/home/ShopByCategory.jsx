@@ -5,13 +5,19 @@ import { Link } from "react-router-dom";
 const categories = [
   { name: "Supermarket", image: "beverages.jpg", link: "/Supermarket" },
   {
-    name: "Health & Beauty",
-    image: "Camera.jpg",
-    link: "/healthAndBeauty",
+    name: "eMile12",
+    image: "eMile12logo.png",
+    link: "/ComingSoon",
   },
   {
+    name: "Health & Beauty",
+    image: "healthAndbeauty.jpg",
+    link: "/ComingSoon",
+  },
+
+  {
     name: "Appliances",
-    image: "HomeTheatres.png",
+    image: "Air ConditionersAndAccessories.jpg",
     link: "/Appliances",
   },
   {
@@ -21,8 +27,8 @@ const categories = [
   },
   {
     name: "Computing",
-    image: "Air ConditionersAndAccessories.jpg",
-    link: "/Computing",
+    image: "laptops.jpg",
+    link: "/ComingSoon",
   },
   {
     name: "Electronics",
@@ -31,33 +37,38 @@ const categories = [
   },
   {
     name: "Fashion",
-    image: "WashingMachinesAndDryers.jpg",
-    link: "/fashion",
+    image: "fashion.jpg",
+    link: "/ComingSoon",
   },
   {
     name: "Baby Products",
-    image: "Freezers.jpg",
-    link: "/babyProducts",
+    image: "babyProducts.jpg",
+    link: "/ComingSoon",
   },
   {
     name: "Gaming",
-    image: "Freezers.jpg",
-    link: "/gaming",
+    image: "playstation.jpg",
+    link: "/ComingSoon",
   },
   {
     name: "Sporting Goods",
-    image: "Freezers.jpg",
-    link: "/sportingGoods",
+    image: "sportingGoods.jpg",
+    link: "/ComingSoon",
   },
   {
     name: "Pet supplies",
-    image: "Freezers.jpg",
-    link: "/petSupplies",
+    image: "petSupplies.jpg",
+    link: "/ComingSoon",
   },
   {
     name: "Books, Movies & Music",
-    image: "Freezers.jpg",
-    link: "/booksMoviesAndMusic",
+    image: "ebook.jpg",
+    link: "/ComingSoon",
+  },
+  {
+    name: "Building Materials",
+    image: "buildingMaterials.jpg",
+    link: "/ComingSoon",
   },
 ];
 

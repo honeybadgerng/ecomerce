@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 
-const HeroSection = () => {
+const ComingSoon = () => {
   return (
     <Box
       minHeight="100vh"
@@ -10,7 +10,7 @@ const HeroSection = () => {
       alignItems="center"
       textAlign="center"
       padding="0 20px"
-      backgroundImage="linear-gradient(to right, #ff5252, #ff1744)" // Vibrant gradient background
+      background="linear-gradient(to right, #ff5252, #ff1744)" // Vibrant background gradient
       color="#fff" // Text color
     >
       <Box
@@ -20,17 +20,17 @@ const HeroSection = () => {
         borderRadius="8px"
       >
         <Typography variant="h2" gutterBottom>
-          Welcome to Xclusive Mart
+          Coming Soon!
         </Typography>
         <Typography variant="body1" paragraph>
-          Xclusive world for solutions
+          We're working hard to bring you something amazing. Stay tuned!
         </Typography>
         <Button variant="contained" color="secondary">
-          Get Started
+          Get Notified
         </Button>
       </Box>
     </Box>
   );
 };
 
-export default HeroSection;
+export default ComingSoon;
