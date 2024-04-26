@@ -10,7 +10,7 @@ const HeroSection = () => {
       alignItems="center"
       textAlign="center"
       padding="0 20px"
-      backgroundImage="linear-gradient(to right, #ff5252, #ff1744)" // Vibrant gradient background
+      // backgroundImage="linear-gradient(to right, #ff5252, #ff1744)" // Vibrant gradient background
       color="#fff" // Text color
     >
       <Box
