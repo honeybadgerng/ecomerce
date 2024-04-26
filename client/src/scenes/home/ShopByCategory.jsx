@@ -5,13 +5,19 @@ import { Link } from "react-router-dom";
 const categories = [
   { name: "Supermarket", image: "beverages.jpg", link: "/Supermarket" },
   {
-    name: "Health & Beauty",
-    image: "Camera.jpg",
-    link: "/healthAndBeauty",
+    name: "eMile12",
+    image: "eMile12logo.png",
+    link: "/eMile12",
   },
   {
+    name: "Health & Beauty",
+    image: "healthAndbeauty.jpg",
+    link: "/healthAndBeauty",
+  },
+
+  {
     name: "Appliances",
-    image: "HomeTheatres.png",
+    image: "Air ConditionersAndAccessories.jpg",
     link: "/Appliances",
   },
   {
@@ -21,7 +27,7 @@ const categories = [
   },
   {
     name: "Computing",
-    image: "Air ConditionersAndAccessories.jpg",
+    image: "laptops.jpg",
     link: "/Computing",
   },
   {
@@ -36,28 +42,33 @@ const categories = [
   },
   {
     name: "Baby Products",
-    image: "Freezers.jpg",
+    image: "babyProducts.jpg",
     link: "/babyProducts",
   },
   {
     name: "Gaming",
-    image: "Freezers.jpg",
+    image: "playstation.jpg",
     link: "/gaming",
   },
   {
     name: "Sporting Goods",
-    image: "Freezers.jpg",
+    image: "sportingGoods.jpg",
     link: "/sportingGoods",
   },
   {
     name: "Pet supplies",
-    image: "Freezers.jpg",
+    image: "petSupplies.jpg",
     link: "/petSupplies",
   },
   {
     name: "Books, Movies & Music",
-    image: "Freezers.jpg",
+    image: "ebook.jpg",
     link: "/booksMoviesAndMusic",
+  },
+  {
+    name: "Building Materials",
+    image: "buildingMaterials.jpg",
+    link: "/ComingSoon",
   },
 ];
 
