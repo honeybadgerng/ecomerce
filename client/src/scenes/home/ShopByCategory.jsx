@@ -7,12 +7,12 @@ const categories = [
   {
     name: "eMile12",
     image: "eMile12logo.png",
-    link: "/eMile12",
+    link: "/ComingSoon",
   },
   {
     name: "Health & Beauty",
     image: "healthAndbeauty.jpg",
-    link: "/healthAndBeauty",
+    link: "/ComingSoon",
   },
 
   {
@@ -28,7 +28,7 @@ const categories = [
   {
     name: "Computing",
     image: "laptops.jpg",
-    link: "/Computing",
+    link: "/ComingSoon",
   },
   {
     name: "Electronics",
@@ -37,33 +37,33 @@ const categories = [
   },
   {
     name: "Fashion",
-    image: "WashingMachinesAndDryers.jpg",
-    link: "/fashion",
+    image: "fashion.jpg",
+    link: "/ComingSoon",
   },
   {
     name: "Baby Products",
     image: "babyProducts.jpg",
-    link: "/babyProducts",
+    link: "/ComingSoon",
   },
   {
     name: "Gaming",
     image: "playstation.jpg",
-    link: "/gaming",
+    link: "/ComingSoon",
   },
   {
     name: "Sporting Goods",
     image: "sportingGoods.jpg",
-    link: "/sportingGoods",
+    link: "/ComingSoon",
   },
   {
     name: "Pet supplies",
     image: "petSupplies.jpg",
-    link: "/petSupplies",
+    link: "/ComingSoon",
   },
   {
     name: "Books, Movies & Music",
     image: "ebook.jpg",
-    link: "/booksMoviesAndMusic",
+    link: "/ComingSoon",
   },
   {
     name: "Building Materials",
