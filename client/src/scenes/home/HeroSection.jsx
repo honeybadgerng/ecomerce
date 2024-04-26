@@ -10,23 +10,24 @@ const HeroSection = () => {
       alignItems="center"
       textAlign="center"
       padding="0 20px"
-      // backgroundImage={`url(${process.env.PUBLIC_URL}/assets/hero/hero-1.png)`} // Corrected the URL for the background image
-      // backgroundSize="cover"
-      // backgroundPosition="center"
+      backgroundImage="linear-gradient(to right, #ff5252, #ff1744)" // Vibrant gradient background
+      color="#fff" // Text color
     >
       <Box
         maxWidth="600px"
-        bgcolor="rgba(255, 255, 255, 0.8)"
-        padding="20px"
+        bgcolor="rgba(0, 0, 0, 0.6)" // Semi-transparent background
+        padding="40px"
         borderRadius="8px"
       >
-        {/* Added a semi-transparent background */}
         <Typography variant="h2" gutterBottom>
           Welcome to Xclusive Mart
         </Typography>
         <Typography variant="body1" paragraph>
           Xclusive world for solutions
         </Typography>
+        <Button variant="contained" color="secondary">
+          Get Started
+        </Button>
       </Box>
     </Box>
   );
