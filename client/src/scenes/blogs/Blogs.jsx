@@ -45,7 +45,7 @@ const Posts = () => {
       );
       const data = await response.json();
       setPosts(data.data);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       console.error("Error fetching posts:", error);
     }
