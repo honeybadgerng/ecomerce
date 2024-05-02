@@ -105,14 +105,14 @@ function Navbar() {
           boxShadow="0px 4px 4px rgba(0, 0, 0, 0.1)"
           zIndex="3"
         >
-          <MenuItem onClick={() => navigate("ComingSoon")}>
-            <RouterLink to="/ComingSoon" color="inherit">
+          <MenuItem onClick={() => navigate("ShopByCategory")}>
+            <RouterLink to="/ShopByCategory" color="inherit">
               Shop By Category
             </RouterLink>
           </MenuItem>
-          <MenuItem onClick={() => navigate("ComingSoon")}>
-            <RouterLink to="/ComingSoon" color="inherit">
-              About
+          <MenuItem onClick={() => navigate("AboutUs")}>
+            <RouterLink to="/AboutUs" color="inherit">
+              About us
             </RouterLink>
           </MenuItem>
           <MenuItem onClick={() => navigate("Blogs")}>
