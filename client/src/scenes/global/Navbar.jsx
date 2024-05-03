@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Badge,
@@ -23,10 +23,23 @@ function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
+  const menuRef = useRef(null);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    }
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <Box
@@ -88,7 +101,7 @@ function Navbar() {
               <ShoppingBagOutlined />
             </IconButton>
           </Badge>
-          <IconButton onClick={handleMenuClick} sx={{ color: "black" }}>
+          <IconButton onMouseDown={handleMenuClick} sx={{ color: "black" }}>
             {isMenuOpen ? <Close /> : <MenuOutlined />}
           </IconButton>
         </Box>
@@ -97,6 +110,7 @@ function Navbar() {
       {/* Menu items */}
       {isMenuOpen && (
         <Box
+          ref={menuRef}
           position="absolute"
           top="60px"
           right="0"
@@ -105,69 +119,24 @@ function Navbar() {
           boxShadow="0px 4px 4px rgba(0, 0, 0, 0.1)"
           zIndex="3"
         >
-          <MenuItem onClick={() => navigate("blogs")}>
-            <RouterLink to="/blogs" color="inherit">
+          <MenuItem onClick={() => navigate("ShopByCategory")}>
+            <RouterLink to="/ShopByCategory" color="inherit">
+              Shop By Category
+            </RouterLink>
+          </MenuItem>
+          <MenuItem onClick={() => navigate("AboutUs")}>
+            <RouterLink to="/AboutUs" color="inherit">
+              About us
+            </RouterLink>
+          </MenuItem>
+          <MenuItem onClick={() => navigate("Blogs")}>
+            <RouterLink to="/Blogs" color="inherit">
               Blogs
             </RouterLink>
           </MenuItem>
-          <MenuItem onClick={() => navigate("Supermarket")}>
-            <RouterLink to="/Supermarket" color="inherit">
-              Supermarket
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Health & Beauty")}>
-            <RouterLink to="/healthAndBeauty" color="inherit">
-              Health & Beauty
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Appliances")}>
-            <RouterLink to="/Appliances" color="inherit">
-              Appliances
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("PhonesAndTablets")}>
-            <RouterLink to="/PhonesAndTablets" color="inherit">
-              Phones & Tablets
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Computing")}>
-            <RouterLink to="/computing" color="inherit">
-              Computing
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Electronics")}>
-            <RouterLink to="/electronics" color="inherit">
-              Electronics
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Fashion")}>
-            <RouterLink to="/fashion" color="inherit">
-              Fashion
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Baby Products")}>
-            <RouterLink to="/babyProducts" color="inherit">
-              Baby Products
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Gaming")}>
-            <RouterLink to="/gaming" color="inherit">
-              Gaming
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Sporting Goods")}>
-            <RouterLink to="/sportingGoods" color="inherit">
-              Sporting Goods
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Pet supplies")}>
-            <RouterLink to="/petSupplies" color="inherit">
-              Pet supplies
-            </RouterLink>
-          </MenuItem>
-          <MenuItem onClick={() => navigate("Books, Movies & Music")}>
-            <RouterLink to="/booksMoviesAndMusic" color="inherit">
-              Books, Movies & Music
+          <MenuItem onClick={() => navigate("Footer")}>
+            <RouterLink to="/Footer" color="inherit">
+              Contact
             </RouterLink>
           </MenuItem>
         </Box>

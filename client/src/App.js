@@ -38,6 +38,8 @@ import MobileAccessories from "./scenes/categories/MobileAccessories";
 import Post from "./components/Post";
 import PostDetails from "./scenes/postDetails/PostDetails";
 import Blogs from "./scenes/blogs/Blogs";
+import AboutUs from "./scenes/home/AboutUs";
+import ShopByCategory from "./scenes/home/ShopByCategory";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -101,6 +103,8 @@ function App() {
           <Route path="/Post" element={<Post />} />
           <Route path="/Blogs" element={<Blogs />} />
           <Route path="/ComingSoon" element={<ComingSoon />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/ShopByCategory" element={<ShopByCategory />} />
         </Routes>
         <CartMenu />
         <Footer />
