@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   Badge,
@@ -23,10 +23,23 @@ function Navbar() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
+  const menuRef = useRef(null);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    }
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <Box
@@ -88,7 +101,7 @@ function Navbar() {
               <ShoppingBagOutlined />
             </IconButton>
           </Badge>
-          <IconButton onClick={handleMenuClick} sx={{ color: "black" }}>
+          <IconButton onMouseDown={handleMenuClick} sx={{ color: "black" }}>
             {isMenuOpen ? <Close /> : <MenuOutlined />}
           </IconButton>
         </Box>
@@ -97,6 +110,7 @@ function Navbar() {
       {/* Menu items */}
       {isMenuOpen && (
         <Box
+          ref={menuRef}
           position="absolute"
           top="60px"
           right="0"
