@@ -18,7 +18,14 @@ const Item = ({ item, width }) => {
 
   const { price, name, image } = item.attributes;
   // Check if 'image' is defined and has the required properties
-  const url = image?.data?.attributes?.formats?.thumbnail?.url || "";
+  const url =
+    image?.data?.attributes?.formats?.medium?.url ||
+    image?.data?.attributes?.formats?.large?.url ||
+    image?.data?.attributes?.formats?.xlarge?.url ||
+    image?.data?.attributes?.formats?.small?.url ||
+    image?.data?.attributes?.formats?.xsmall?.url ||
+    image?.data?.attributes?.formats?.thumbnail?.url ||
+    "";
 
   return (
     <Box width={width}>

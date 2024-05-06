@@ -10,7 +10,13 @@ const Post = ({ post, width }) => {
   // Access post attributes
   const { Title, Excerpt, image } = post.attributes;
   const url =
-    image?.data?.attributes?.formats?.thumbnail?.url || "no image found";
+    image?.data?.attributes?.formats?.medium?.url ||
+    image?.data?.attributes?.formats?.large?.url ||
+    image?.data?.attributes?.formats?.xlarge?.url ||
+    image?.data?.attributes?.formats?.small?.url ||
+    image?.data?.attributes?.formats?.xsmall?.url ||
+    image?.data?.attributes?.formats?.thumbnail?.url ||
+    "";
 
   // Access author's name
   const authorName =
