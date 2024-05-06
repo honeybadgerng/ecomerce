@@ -55,8 +55,60 @@ const ItemDetails = () => {
       <Box display="flex" flexWrap="wrap" columnGap="40px">
         {/* IMAGES */}
         <Box flex="1 1 40%" mb="40px">
-          {item?.attributes?.image?.data?.attributes?.formats?.thumbnail
-            ?.url ? (
+          {item?.attributes?.image?.data?.attributes?.formats?.medium?.url ? (
+            <img
+              alt={item?.attributes?.name}
+              width="100%"
+              height="100%"
+              src={
+                item?.attributes?.image?.data?.attributes?.formats?.medium?.url
+              }
+              style={{ objectFit: "contain" }}
+            />
+          ) : item?.attributes?.image?.data?.attributes?.formats?.large?.url ? (
+            <img
+              alt={item?.attributes?.name}
+              width="100%"
+              height="100%"
+              src={
+                item?.attributes?.image?.data?.attributes?.formats?.large?.url
+              }
+              style={{ objectFit: "contain" }}
+            />
+          ) : item?.attributes?.image?.data?.attributes?.formats?.xlarge
+              ?.url ? (
+            <img
+              alt={item?.attributes?.name}
+              width="100%"
+              height="100%"
+              src={
+                item?.attributes?.image?.data?.attributes?.formats?.xlarge?.url
+              }
+              style={{ objectFit: "contain" }}
+            />
+          ) : item?.attributes?.image?.data?.attributes?.formats?.small?.url ? (
+            <img
+              alt={item?.attributes?.name}
+              width="100%"
+              height="100%"
+              src={
+                item?.attributes?.image?.data?.attributes?.formats?.small?.url
+              }
+              style={{ objectFit: "contain" }}
+            />
+          ) : item?.attributes?.image?.data?.attributes?.formats?.xsmall
+              ?.url ? (
+            <img
+              alt={item?.attributes?.name}
+              width="100%"
+              height="100%"
+              src={
+                item?.attributes?.image?.data?.attributes?.formats?.xsmall?.url
+              }
+              style={{ objectFit: "contain" }}
+            />
+          ) : item?.attributes?.image?.data?.attributes?.formats?.thumbnail
+              ?.url ? (
             <img
               alt={item?.attributes?.name}
               width="100%"
