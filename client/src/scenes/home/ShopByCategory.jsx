@@ -7,7 +7,7 @@ const categories = [
   {
     name: "eMile12",
     image: "eMile12logo.png",
-    link: "/ComingSoon",
+    link: "/Emile12",
   },
   {
     name: "Health & Beauty",

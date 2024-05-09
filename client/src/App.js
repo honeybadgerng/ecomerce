@@ -40,6 +40,7 @@ import PostDetails from "./scenes/postDetails/PostDetails";
 import Blogs from "./scenes/blogs/Blogs";
 import AboutUs from "./scenes/home/AboutUs";
 import ShopByCategory from "./scenes/home/ShopByCategory";
+import Emile12 from "./scenes/categories/Emile12";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -105,6 +106,7 @@ function App() {
           <Route path="/ComingSoon" element={<ComingSoon />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/ShopByCategory" element={<ShopByCategory />} />
+          <Route path="/Emile12" element={<Emile12 />} />
         </Routes>
         <CartMenu />
         <Footer />
