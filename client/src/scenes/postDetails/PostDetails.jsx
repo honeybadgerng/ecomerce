@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material";
 // import Tab from "@mui/material/Tab";
 import { useParams } from "react-router-dom";
 // import { shades } from "../../theme";
+import ReactMarkdown from "react-markdown";
 
 const PostDetails = () => {
   const { postId } = useParams();
@@ -35,7 +36,7 @@ const PostDetails = () => {
       {post && (
         <>
           {/* POST TITLE */}
-          <Typography variant="h3">{post.attributes.Title}</Typography>
+          <ReactMarkdown variant="h3">{post.attributes.Title}</ReactMarkdown>
 
           {/* POST IMAGE */}
           {post.attributes.image && (
@@ -49,11 +50,15 @@ const PostDetails = () => {
           <div>Author: {post.attributes.author?.data?.attributes?.Name}</div>
           {/* POST Excerpt */}
           <Box mt={2}>
-            <Typography variant="body1">{post.attributes.Excerpt}</Typography>
+            <ReactMarkdown variant="body1">
+              {post.attributes.Excerpt}
+            </ReactMarkdown>
           </Box>
           {/* POST CONTENT */}
           <Box mt={2}>
-            <Typography variant="body1">{post.attributes.Content}</Typography>
+            <ReactMarkdown variant="body1">
+              {post.attributes.Content}
+            </ReactMarkdown>
           </Box>
 
           {/* TABS */}
