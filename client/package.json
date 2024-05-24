@@ -19,6 +19,7 @@
     "pure-react-carousel": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
     "react-paystack": "^4.0.3",
     "react-redux": "^8.0.2",
     "react-responsive-carousel": "^3.2.23",
