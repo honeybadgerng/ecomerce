@@ -49,11 +49,11 @@ const PostDetails = () => {
           {/* POST author */}
           <div>Author: {post.attributes.author?.data?.attributes?.Name}</div>
           {/* POST Excerpt */}
-          <Box mt={2}>
+          {/* <Box mt={2}>
             <ReactMarkdown variant="body1">
               {post.attributes.Excerpt}
             </ReactMarkdown>
-          </Box>
+          </Box> */}
           {/* POST CONTENT */}
           <Box mt={2}>
             <ReactMarkdown variant="body1">
