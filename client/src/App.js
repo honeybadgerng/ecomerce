@@ -100,7 +100,7 @@ function App() {
           <Route path="post/:postId" element={<PostDetails />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="checkout/success" element={<Confirmation />} />
-          <Route path="post/:postId" element={<PostDetails />} />
+          <Route path="post/:slug" element={<PostDetails />} />
           <Route path="/Post" element={<Post />} />
           <Route path="/Blogs" element={<Blogs />} />
           <Route path="/ComingSoon" element={<ComingSoon />} />
