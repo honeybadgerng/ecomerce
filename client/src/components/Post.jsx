@@ -22,13 +22,18 @@ const Post = ({ post, width }) => {
   const authorName =
     post?.attributes?.author?.data?.attributes?.Name || "unknown author ";
 
+  const handleNavigation = () => {
+    console.log("Navigating to slug:", post.attributes.slug); // Access the slug property
+    navigate(`/post/${post.attributes.slug}`);
+  };
+
   return (
     <Box width={width}>
       <Box
         position="relative"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        onClick={() => navigate(`/post/${post.id}`)}
+        onClick={handleNavigation}
         style={{ cursor: "pointer" }}
       >
         <img
@@ -57,11 +62,7 @@ const Post = ({ post, width }) => {
         )}
       </Box>
 
-      <Box
-        mt={2}
-        onClick={() => navigate(`/post/${post.id}`)}
-        style={{ cursor: "pointer" }}
-      >
+      <Box mt={2} onClick={handleNavigation} style={{ cursor: "pointer" }}>
         <Typography variant="h6">{Title}</Typography>
         <Typography variant="subtitle2" color="textSecondary">
           {Excerpt}
