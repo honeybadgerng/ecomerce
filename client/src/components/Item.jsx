@@ -39,7 +39,7 @@ const Item = ({ item, width }) => {
           width="300px"
           height="400px"
           src={`${url}`}
-          onClick={() => navigate(`/item/${item.id}`)}
+          onClick={() => navigate(`/item/${item.attributes.slug}`)} // Access the slug property
           style={{ cursor: "pointer" }}
         />
         <Box
