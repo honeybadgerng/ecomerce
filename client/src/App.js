@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./scenes/home/Home";
+import { Helmet } from "react-helmet";
 import Navbar from "./scenes/global/Navbar";
 import ComingSoon from "./scenes/global/ComingSoon";
 import Footer from "./scenes/global/Footer";
@@ -56,6 +57,10 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <Helmet>
+          <title>Xclusive Mart</title>
+          <meta name="description" content="Install Xclusive Mart App" />
+        </Helmet>
         <Navbar />
         <ScrollToTop />
         <Routes>
