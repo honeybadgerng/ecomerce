@@ -10,6 +10,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import { shades } from "../../theme";
 import { addToCart } from "../../state";
 import { useDispatch } from "react-redux";
+import { Helmet } from "react-helmet";
 
 const ItemDetails = () => {
   const dispatch = useDispatch();
@@ -52,6 +53,10 @@ const ItemDetails = () => {
 
   return (
     <Box width="80%" m="80px auto">
+      <Helmet>
+        <title>{item.attributes.name}</title>
+        <meta name="description" content={item.attributes.longDescription} />
+      </Helmet>
       <Box display="flex" flexWrap="wrap" columnGap="40px">
         {/* IMAGES */}
         <Box flex="1 1 40%" mb="40px">
