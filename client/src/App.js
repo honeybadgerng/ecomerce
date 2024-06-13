@@ -58,8 +58,8 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Helmet>
-          <title>Xclusive Mart</title>
-          <meta name="description" content="Install Xclusive Mart App" />
+          <title>Xclusive Mart </title>
+          <meta name="description" content="Your favorite online store " />
         </Helmet>
         <Navbar />
         <ScrollToTop />

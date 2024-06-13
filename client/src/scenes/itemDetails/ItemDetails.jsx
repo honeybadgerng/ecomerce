@@ -25,24 +25,24 @@ const ItemDetails = () => {
   };
 
   async function getItem() {
-    const item = await fetch(
+    const response = await fetch(
       `https://emile12server.onrender.com/api/items/${itemId}?populate=image`,
       {
         method: "GET",
       }
     );
-    const itemJson = await item.json();
+    const itemJson = await response.json();
     setItem(itemJson.data);
   }
 
   async function getItems() {
-    const items = await fetch(
+    const response = await fetch(
       `https://emile12server.onrender.com/api/items?populate=image`,
       {
         method: "GET",
       }
     );
-    const itemsJson = await items.json();
+    const itemsJson = await response.json();
     setItems(itemsJson.data);
   }
 
@@ -53,10 +53,12 @@ const ItemDetails = () => {
 
   return (
     <Box width="80%" m="80px auto">
-      <Helmet>
-        <title>{item.attributes.name}</title>
-        <meta name="description" content={item.attributes.longDescription} />
-      </Helmet>
+      {item && item.attributes && (
+        <Helmet>
+          <title>{item.attributes.name}</title>
+          <meta name="description" content={item.attributes.longDescription} />
+        </Helmet>
+      )}
       <Box display="flex" flexWrap="wrap" columnGap="40px">
         {/* IMAGES */}
         <Box flex="1 1 40%" mb="40px">
@@ -209,8 +211,8 @@ const ItemDetails = () => {
           columnGap="1.33%"
           justifyContent="space-between"
         >
-          {items.slice(0, 4).map((item, i) => (
-            <Item key={`${item.name}-${i}`} item={item} />
+          {items.slice(0, 4).map((relatedItem, i) => (
+            <Item key={`${relatedItem.name}-${i}`} item={relatedItem} />
           ))}
         </Box>
       </Box>
